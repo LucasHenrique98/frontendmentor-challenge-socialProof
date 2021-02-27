@@ -11,6 +11,9 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+
+  position: absolute;
+  bottom: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -25,6 +28,8 @@ body {
   background-position: right 300px, left 0px;
 
   font-family: Spartan;
+
+  position: relative;
 }
 
 .container {
@@ -37,9 +42,10 @@ body {
 }
 
 .contend-container {
-  border: 2px solid black;
   width: 1500px;
-  height: 700px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .top-container {
@@ -111,4 +117,68 @@ body {
 #secondChild {
   position: relative;
   left: 100px;
+}
+
+.bottom-container {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 50px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  background: var(--veryDark);
+  border-radius: 5px;
+
+  width: 400px;
+  height: 230px;
+}
+
+#user-card1 {
+  margin-top: 10px;
+}
+
+#user-card2 {
+  margin-top: 60px;
+}
+
+#user-card3 {
+  margin-top: 110px;
+}
+
+.user-card > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-left: 20px;
+}
+
+.user-card p {
+  color: var(--white);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.user-card > div img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-card > div > div span {
+  color: var(--white);
+}
+
+.user-card > div > div p {
+  color: var(--softPink);
+  margin: 0;
 }
