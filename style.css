@@ -182,3 +182,116 @@ body {
   color: var(--softPink);
   margin: 0;
 }
+
+@media (max-width: 375px) {
+  body {
+    background-image: url('./images/bg-pattern-bottom-mobile.svg'),
+      url('./images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: right, left;
+  }
+  .attribution {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .top-container > div:first-child h2 {
+    font-size: 40px;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contend-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    position: unset;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+  }
+
+  .reviews > div:last-child {
+    position: relative;
+    left: 0px;
+  }
+
+  #secondChild {
+    position: relative;
+    left: 0px;
+  }
+  .card-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+    background: var(--lightGrayish);
+    height: 50px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .card-reviews > div img {
+    margin-right: 10px;
+  }
+
+  .card-reviews > div img:first-child {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .card-reviews p {
+    padding: 10px;
+
+    font-weight: 700;
+    color: var(--veryDark);
+  }
+  .user-card {
+    width: 300px !important;
+    height: 350px !important;
+  }
+  #user-card1 {
+    margin-top: 10px;
+  }
+
+  #user-card2 {
+    margin-top: 30px;
+  }
+
+  #user-card3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .attribution {
+    font-size: 11px;
+
+    position: absolute;
+    bottom: 0;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
